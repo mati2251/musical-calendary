@@ -17,6 +17,37 @@
   ],
   "rules": {
     "import/no-unresolved": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": [
+      "error",
+      {
+        "exceptMethods": [
+          "ngOnInit"
+        ]
+      }
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "tx": "never",
+        "tsx": "never",
+        "js": "never",
+        "jsx": "never"
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ]
   }
 }
